@@ -64,18 +64,20 @@
 		{
 			"doubleSided":true,
 			"emissiveFactor":[
-				1,
-				1,
-				1
+				0.8807875514030457,
+				0.8844751715660095,
+				0.004362898413091898
 			],
 			"name":"Material",
 			"pbrMetallicRoughness":{
 				"baseColorFactor":[
-					0,
-					0,
-					0,
+					0.08403915166854858,
+					0.08478105068206787,
+					0.8000000715255737,
 					1
-				]
+				],
+				"metallicFactor":0,
+				"roughnessFactor":0.5
 			}
 		}
 	],
