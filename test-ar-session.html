@@ -78,6 +78,7 @@ CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
       
       let noisecube = new Gltf2Node({url: 'media/gltf/noisecube/noisecube.gltf'});
       noisecube.scale = [0.05, 0.05, 0.05];
+      noisecube.translation = [0, 0, -1];
       scene.addNode(noisecube);
 
       // Still adding a skybox, but only for the benefit of the inline view.
