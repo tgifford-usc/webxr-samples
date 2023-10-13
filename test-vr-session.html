@@ -69,9 +69,13 @@ CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
       let gl = null;
       let renderer = null;
       let scene = new Scene();
-      scene.addNode(new Gltf2Node({url: 'media/gltf/space/space.gltf'}));
+      //scene.addNode(new Gltf2Node({url: 'media/gltf/space/space.gltf'}));
       // scene.addNode(new SkyboxNode({url: 'media/textures/milky-way-4k.png'}));
-      scene.addNode(new SkyboxNode({url: 'media/textures/mono_equirect_test.png'}));
+      let des222Text = new Gltf2Node({url: 'media/gltf/text/DES222.gltf'});
+      des222Text.scale = [0.1, 0.1, 0.1];
+      des222Text.translation = [0, 0, -1];
+      scene.addNode(des222Text);      
+      scene.addNode(new SkyboxNode({url: 'media/textures/spaceship_skybox.png'}));
 
       // Checks to see if WebXR is available and, if so, queries a list of
       // XRDevices that are connected to the system.
